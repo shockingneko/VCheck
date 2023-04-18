@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white"
+    tools:context=".contrast.contrastActivity">
+
+    <ImageView
+        android:id="@+id/E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/pr1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/but1"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/yesbackground"
+        android:text="我看的到"
+        android:textColor="#504C4C"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/E"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/but2"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/nobackground"
+        android:text="我看不到"
+        android:textColor="#504C4C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/E"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

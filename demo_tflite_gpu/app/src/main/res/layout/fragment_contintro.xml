@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/introbackground"
+    tools:context=".contrast.contintroFragment">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="流程說明"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="340dp"
+        android:layout_height="190dp"
+        android:text="(1) 被測試者將視線平行螢幕，距離螢幕大約30公分左右的位置。\n\n(2) 如果平常已戴有框眼鏡或隱形眼鏡，測試時可以不用拿下，以確定是否需要矯正。\n\n(3) 測試進行會有圖片產生，會隨著您回答次數逐漸調整對比度，全部回答正確判斷為正常，否則為異常。"
+        android:textColor="#4D4B4B"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:text="(註) 請不要在眼睛疲勞或生病時做此測試，以免不準確。"
+        android:textColor="#4D4B4B"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonbackground"
+        android:text="我知道了"
+        android:textColor="#504C4C"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/back_to_user"
+        android:layout_width="62dp"
+        android:layout_height="47dp"
+        android:background="#00000000"
+        android:text="ㄑ"
+        android:textSize="20dp"
+        android:textColor="#007368"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+</android.support.constraint.ConstraintLayout>

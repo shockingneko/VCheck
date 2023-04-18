@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerbackground"
+    tools:context=".login.register">
+
+    <EditText
+        android:id="@+id/reg_name"
+        android:layout_width="180dp"
+        android:layout_height="46dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:textSize="15dp"
+        android:hint="註冊的使用者名稱"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/reg_height"
+        android:layout_width="180dp"
+        android:layout_height="46dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:hint="使用者身高(公分)"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_name"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/finishregister"
+        android:layout_width="150dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="25dp"
+        android:text="下一個"
+        android:background="@drawable/buttonbackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password_check" />
+
+    <Button
+        android:id="@+id/back_to_user"
+        android:layout_width="62dp"
+        android:layout_height="47dp"
+        android:background="#00000000"
+        android:text="ㄑ"
+        android:textSize="20dp"
+        android:textColor="#007368"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/headspin_back"
+        android:drawSelectorOnTop="true"
+        android:minWidth="100dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="180dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="15dp"
+        android:ems="12"
+        android:textSize="15dp"
+        android:hint="輸入密碼"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_height" />
+
+    <EditText
+        android:id="@+id/Password_check"
+        android:layout_width="180dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="40dp"
+        android:ems="12"
+        android:textSize="15dp"
+        android:hint="確認密碼"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
+
+    <TextView
+        android:id="@+id/password_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*長度8-12個字，需包含英文大小寫及數字"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="@+id/Password"
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
+
+    <TextView
+        android:id="@+id/password_check_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*與密碼不相符"
+        android:textSize="10dp"
+        android:textColor="#ff0000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/Password_check"
+        app:layout_constraintTop_toBottomOf="@+id/Password_check" />
+
+    <EditText
+        android:id="@+id/input_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:visibility="invisible"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/finishregister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="請輸入忘記密碼時您要回答的問題"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/reg_name"
+        app:layout_constraintStart_toStartOf="@+id/input_answer" />
+
+    <TextView
+        android:id="@+id/name_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用者名稱重複!"
+        android:textSize="10dp"
+        android:textColor="#ff0000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/reg_name"
+        app:layout_constraintTop_toBottomOf="@+id/reg_name" />
+
+</android.support.constraint.ConstraintLayout>

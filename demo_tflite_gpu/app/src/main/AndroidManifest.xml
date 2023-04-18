@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.edvard.poseestimation">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/MaterialTheme">
+        <activity android:name=".login.forget_passwordActivity" />
+        <activity
+            android:name=".login.login"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".contrast.contrastActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".colorblind.colorblindActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".asti.astigmatismActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presbyopia.presbyopiaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".macular.MacularActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainpageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".degree.CameraActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

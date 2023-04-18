@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/finishbackground"
+    tools:context=".asti.astifinishFragment">
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/buttonbackground"
+        android:text="返回首頁"
+        android:textColor="#504C4C"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/lefteye"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/idk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/righteye"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/idk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="357dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:text="結果不明或有問題"
+        android:textColor="#4D4B4B"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="散光"
+        android:textColor="#F1A255"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/lefteye"
+        app:layout_constraintStart_toStartOf="@+id/lefteye"
+        app:layout_constraintTop_toBottomOf="@+id/lefteye"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="散光"
+        android:textColor="#F1A255"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/righteye"
+        app:layout_constraintStart_toStartOf="@+id/righteye"
+        app:layout_constraintTop_toBottomOf="@+id/righteye"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="測驗結束，以下是測驗結果"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="建議您尋求專業醫師的幫助"
+        android:textColor="#F69336"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+</android.support.constraint.ConstraintLayout>

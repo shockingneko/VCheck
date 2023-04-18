@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/finishbackground"
+    tools:context=".colorblind.colfinishFragment">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="381dp"
+        android:layout_height="193dp"
+        android:src="@drawable/col_frame"
+        app:layout_constraintBottom_toBottomOf="@+id/cbt1"
+        app:layout_constraintEnd_toEndOf="@+id/cbt1"
+        app:layout_constraintStart_toStartOf="@+id/cbt1"
+        app:layout_constraintTop_toTopOf="@+id/cbt1" />
+
+    <TextView
+        android:id="@+id/cbt1"
+        android:layout_width="237dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="80dp"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/cbbut1"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/buttonbackground"
+        android:text="返回首頁"
+        android:textColor="#504C4C"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="測驗結束，以下是測驗結果"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

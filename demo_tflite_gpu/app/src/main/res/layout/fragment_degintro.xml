@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".degree.degintroFragment"
+    android:background="@drawable/introbackground">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="流程說明"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="340dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/intro"
+        android:textColor="#4F8F84"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="308dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/ps"
+        android:textColor="#5E8F87"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/judge"
+        app:layout_constraintTop_toBottomOf="@+id/t2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/judge"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/but1"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonbackground"
+        android:enabled="false"
+        android:text="我知道了"
+        android:textColor="#504C4C"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/back_to_user"
+        android:layout_width="62dp"
+        android:layout_height="47dp"
+        android:background="#00000000"
+        android:text="ㄑ"
+        android:textSize="20dp"
+        android:textColor="#007368"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="149dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t3">
+
+        <RadioButton
+            android:id="@+id/radio_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="測左眼"
+            android:textColor="#4D4B4B" />
+
+        <RadioButton
+            android:id="@+id/radio_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="測右眼"
+            android:textColor="#4D4B4B" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/jump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="跳過教學"
+        app:layout_constraintStart_toEndOf="@+id/radiogroup"
+        app:layout_constraintTop_toBottomOf="@+id/t3" />
+
+</android.support.constraint.ConstraintLayout>

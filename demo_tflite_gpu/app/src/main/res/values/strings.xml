@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright 2014 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<resources>
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="toggle_turn_on">NN:On</string>
+    <string name="toggle_turn_off">NN:Off</string>
+    <string name="toggle">Use NNAPI</string>
+
+    <string name="neck">Neck</string>
+    <string name="r_shoulder">RShoulder</string>
+    <string name="r_elbow">RElbow</string>
+    <string name="l_shoulder">LShoulder</string>
+    <string name="l_elbow">LElbow</string>
+    <string name="l_wrist">LWrist</string>
+    <string name="r_wrist">RWrist</string>
+    <string name="r_hip">RHip</string>
+    <string name="r_knee">RKnee</string>
+    <string name="r_ankle">RAnkle</string>
+    <string name="l_hip">LHip</string>
+    <string name="l_knee">LKnee</string>
+    <string name="l_ankle">LAnkle</string>
+    <string name="background">Background</string>
+    <string name="intro">本次測試參照snellen視力量表規範進行，和一般視力檢測一樣，一次測一隻眼，一隻手負責遮另一眼，一手指出圖片英文字母開口方向並維持三秒，最後將為您計算出您的視力。</string>
+    <string name="ps">(註) 請將手經擺正進行測試，盡量使手機90度垂直於桌面</string>
+    <string name="forget"><u>忘記密碼</u></string>
+    <string name="register"><u>點擊註冊</u></string>
+    <string name="seedata"><u>檢視個人資料</u></string>
+    <string name="editdata"><u>編輯</u></string>
+    <string name="editpass"><u>密碼更改</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

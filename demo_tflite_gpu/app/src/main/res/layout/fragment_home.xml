@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainpageActivity"
+    android:background="@drawable/mainpagebackground">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/outside_frame"
+        app:layout_constraintBottom_toBottomOf="@+id/degreetext"
+        app:layout_constraintEnd_toEndOf="@+id/eyedegree"
+        app:layout_constraintStart_toStartOf="@+id/eyedegree"
+        app:layout_constraintTop_toTopOf="@+id/eyedegree" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/outside_frame"
+        app:layout_constraintBottom_toBottomOf="@+id/colorblindtext"
+        app:layout_constraintEnd_toEndOf="@+id/colorblind"
+        app:layout_constraintStart_toStartOf="@+id/colorblind"
+        app:layout_constraintTop_toTopOf="@+id/colorblind" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/outside_frame"
+        app:layout_constraintBottom_toBottomOf="@+id/prebyopiatext"
+        app:layout_constraintEnd_toEndOf="@+id/prebyopia"
+        app:layout_constraintStart_toStartOf="@+id/prebyopia"
+        app:layout_constraintTop_toTopOf="@+id/prebyopia" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/outside_frame"
+        app:layout_constraintBottom_toBottomOf="@+id/maculartext"
+        app:layout_constraintEnd_toEndOf="@+id/macular"
+        app:layout_constraintStart_toStartOf="@+id/macular"
+        app:layout_constraintTop_toTopOf="@+id/macular" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/outside_frame"
+        app:layout_constraintBottom_toBottomOf="@+id/astitext"
+        app:layout_constraintEnd_toEndOf="@+id/asti"
+        app:layout_constraintStart_toStartOf="@+id/asti"
+        app:layout_constraintTop_toTopOf="@+id/asti" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/outside_frame"
+        app:layout_constraintBottom_toBottomOf="@+id/constrasttext"
+        app:layout_constraintEnd_toEndOf="@+id/constrast"
+        app:layout_constraintStart_toStartOf="@+id/constrast"
+        app:layout_constraintTop_toTopOf="@+id/constrast" />
+
+    <TextView
+        android:id="@+id/constrasttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="對比度檢查"
+        app:layout_constraintEnd_toEndOf="@+id/constrast"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toStartOf="@+id/constrast"
+        app:layout_constraintTop_toBottomOf="@+id/constrast" />
+
+    <TextView
+        android:id="@+id/prebyopiatext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="老花檢查"
+        app:layout_constraintEnd_toEndOf="@+id/prebyopia"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="@+id/prebyopia"
+        app:layout_constraintTop_toBottomOf="@+id/prebyopia" />
+
+    <TextView
+        android:id="@+id/degreetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="視力檢查"
+        app:layout_constraintEnd_toEndOf="@+id/eyedegree"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="@+id/eyedegree"
+        app:layout_constraintTop_toBottomOf="@+id/eyedegree" />
+
+    <TextView
+        android:id="@+id/colorblindtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="色弱檢查"
+        app:layout_constraintEnd_toEndOf="@+id/colorblind"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="@+id/colorblind"
+        app:layout_constraintTop_toBottomOf="@+id/colorblind" />
+
+    <TextView
+        android:id="@+id/maculartext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="黃斑部病變檢查"
+        app:layout_constraintEnd_toEndOf="@+id/macular"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="@+id/macular"
+        app:layout_constraintTop_toBottomOf="@+id/macular" />
+
+    <TextView
+        android:id="@+id/astitext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="散光檢查"
+        app:layout_constraintEnd_toEndOf="@+id/asti"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/asti"
+        app:layout_constraintTop_toBottomOf="@+id/asti" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="今天想檢查什麼呢？"
+        android:textColor="#4D4B4B"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/eyedegree"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/e_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <ImageButton
+        android:id="@+id/colorblind"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cb1_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/degreetext" />
+
+    <ImageButton
+        android:id="@+id/prebyopia"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/presbyopia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorblind" />
+
+    <ImageButton
+        android:id="@+id/macular"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/macular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <ImageButton
+        android:id="@+id/constrast"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/contrast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/astitext" />
+
+    <ImageButton
+        android:id="@+id/asti"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/asti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/maculartext" />
+
+
+</android.support.constraint.ConstraintLayout>
